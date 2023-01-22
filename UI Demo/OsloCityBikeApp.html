@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="OsloCityBike.css">
+    <title>City Bike Tracker</title>
+</head>
+
+<body>
+    <h1>City Bike Tracker</h1>
+    <h3>Here you can see available bikes and free parking spots for Oslo City Bikes around the town</h3>
+    <h2>Choose your station</h2>
+    <select name="stations" id="stations_select">
+        <option value="0" selected disabled>-- Choose station --</option>
+    </select>
+
+    <div id="status" class="hidden">
+        <div class="flex">
+            <div class="square">
+                <h3>Bikes available</h3>
+                <span id="available_bikes"></span>
+            </div>
+
+            <div class="square">
+                <h3>Parking spots</h3>
+                <span id="free_spots"></span>
+            </div>
+        </div>
+        <p id="note">Status is automatically refreshed every 10 seconds</p>
+        <div class="separation">
+
+            <p id="ardoqWSLink">Interested to see more about City Bike Monitor? Developers click here</p>
+            <h2>Select your component</h2>
+            <select name="workspaces" id="WS_select">
+                <option value="0" selected>Oslo City Bike</option>
+            </select>
+
+            <div class="flex">
+                <h3>workspaces</h3>
+                <span id="WS_Data"></span>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="OsloCityBike.js"></script>
+</body>
+
+</html>
